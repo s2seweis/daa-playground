@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .slide-left {
+      transform: translateX(-50px);
+      animation: slideLeft 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideLeft {
+      to {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Animated Website</h1>
+  </header>
+
+  <div class="container">
+    <section class="section fade-in">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at neque eu odio posuere fermentum. Nulla facilisi. Suspendisse potenti. Vestibulum dapibus malesuada ex, eget faucibus elit blandit nec. Aliquam in lectus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </section>
+
+    <section class="section slide-left">
+      <h2>Services</h2>
+      <p>
+        Sed in turpis eget odio auctor maximus. Nam euismod elit non odio aliquam, ut aliquet quam vulputate. Nullam ultrices nec enim non pellentesque. Cras tincidunt, tortor nec mollis venenatis, nulla velit tincidunt tellus, ac tristique eros sapien nec eros. Mauris varius ultricies metus, non venenatis quam facilisis nec.
+      </p>
+    </section>
+
+    <section class="section fade-in">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or inquiries, feel free to get in touch with us. We'd love to hear from you!
+      </p>
+      <button>Contact</button>
+    </section>
+  </div>
+</body>
+</html>

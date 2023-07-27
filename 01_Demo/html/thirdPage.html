@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- externe CSS-Datei wird geladen gleiche CSS-Datei könnte auch in weiteren HTML-Datein genutz werden-->
+    <link rel="stylesheet" href="../css/layout.css">
+
+
+    <!-- gültig für diese Datei - überschreibt eventuell Angaben aus der externen CSS-Datei-->
+
+    <style>
+        p {
+            /* color: purple; */
+            /* color: blue; */
+        }
+    </style>
+</head>
+
+<!-- hier kommt er eigentliche Inhalt hin-->
+
+<body>
+    <!--3 Absätze mit Lorem-Text
+    Emmet Snippet: {p*3>lorem}
+    -->
+
+
+
+    <!--gemeinsame Formatierungen in einer Formatvorlage wird in CSS angesprochen mit.namen 
+        / class darf mehrfach genutz werden-->
+    <div class="background-e1" >
+        <p class="wichtig-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ullam quia obcaecati nesciunt
+            perspiciatis labore
+            harum qui! Nulla aliquid facilis sit nostrum quod eligendi necessitatibus? Vel iure sequi quo illum.</p>
+    </div>
+
+    <div class="background-e2" >
+        <p class="wichtig-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ullam quia obcaecati nesciunt
+            perspiciatis labore
+            harum qui! Nulla aliquid facilis sit nostrum quod eligendi necessitatibus? Vel iure sequi quo illum.</p>
+        </div>
+
+    <!--ID nur einmal benutzen/ Stärkste Selektion/nur einmal im Dokument -->
+
+        <div class="background-e3">            
+            <p id="meinAbsatz"> &nbsp Voluptas explicabo aspernatur esse. Impedit in laborum, ex adipisci unde aliquam veniam
+                dolor
+                laudantium,
+                mollitia quasi eaque delectus molestias voluptas. Cupiditate iste quos architecto nesciunt aut, repellat ratione
+                dicta quis.</p>
+            </div>
+
+            <div class="background-e4">                
+                <p>Laborum natus culpa non est at repellendus consequuntur recusandae qui et quam. Alias hic dolorum ipsum odio,
+                    esse sed molestiae, dolore repellat quisquam assumenda eum facilis, distinctio fugit ducimus optio?</p>
+                </div>
+
+    <h2 style="text-align: center; margin-top: 50px; background: lightgray;">Headlines with h - tag </h2>
+
+
+    <div class="wichtig-3">
+        <h1>Überschrift:1</h1>
+        <h2>Überschrift:2</h2>
+        <h3>Überschrift:3</h3>
+        <h4>Überschrift:4</h4>
+        <h5>Überschrift:5</h5>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 50px; background: lightgray;">Links with a - tag </h2>
+
+    <div class="wichtig-4">
+        <a href="/link1">Link:1</a>
+        <a href="/link2">Link:2</a>
+        <a href="/link3">Link:3</a>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 50px; background: lightgray;">Links inside of an p - tag </h2>
+
+    <div class="wichtig-5">
+        <p><a href="/link1">Link:1</a></p>
+        <p><a href="/link2">Link:2</a></p>
+        <p><a href="/link3">Link:3</a></p>
+
+    </div>
+
+</body>
+
+</html>

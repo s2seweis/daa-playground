@@ -1,0 +1,57 @@
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(186, 14, 166);
+    font-family: 'Borel', cursive;
+}
+
+p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Borel', cursive;
+}
+
+
+/* ### - Span Tag */
+
+span {
+    color: blue;
+    border: 1px solid black;
+}
+
+.extra span {
+    color: inherit;
+}
+
+/* ### - Span Tag */
+
+/* Animation - Fade In */
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .slide-left {
+    transform: translateX(-100px);
+    animation: slideLeft 1s forwards;
+  }
+
+  @keyframes slideLeft {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-right {
+    transform: translateX(100px);
+    animation: slideRight 1s forwards;
+  }
+
+  @keyframes slideRight {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+
+
