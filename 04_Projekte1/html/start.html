@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite</title>
+    <link rel="stylesheet" href="../css/layout.css">
+
 </head>
 
 <body>
     <h1>Startseite</h1>
 
     <!--href="#" = go to yourself-->
-    <a href="#">Start</a>
-    <a href="befehle.html">Befehle</a>
-    <a href="links.html">Links</a>
+    <a href="#" class="navi aktuell">Start </a>
+    <a href="befehle.html" class="navi">Befehle</a>
+    <a href="links.html" class="navi">Links</a>
 
 
     <div style="margin: 50px;">
@@ -30,13 +32,13 @@
 
     <h2 style="text-align: center;">Active Link </h2>
     <div style="text-align: center; text-decoration: none;">
-        <a href="https://www.google.de" target="_self">Go to Google</a>
+        <a class="navi" href="https://www.google.de" target="_self">Go to Google</a>
         <h2 style="text-align: center;">Deactivated Link </h2>
 
         <!-- </p> -->
 
         <p style="text-decoration: none;">
-            <a href="https://www.google.de" disabled="disabled">Go to Google</a>
+            <a class="navi" href="https://www.google.de" disabled="disabled">Go to Google</a>
         </p>
 
         <!-- </p> -->

@@ -1,0 +1,54 @@
+/* h1, h2, h3, h4, h5{
+    color: green;
+} */
+
+
+h1 {
+    color: green;
+}
+
+/* a wirkt sich erstmal auf alle Pseudo-Zustände aus */
+/* a.navi, a.navi:visited{ */
+a.navi,
+a.navi {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    border: 1px solid black;
+    color: black;
+    /* Strich unter Link entfernen */
+    text-decoration: none;
+    /* Innenabstand
+    Kurzschreibweise, um alle 4 seiten direkt anzusprechen */
+    padding: 10px 10px 10px 10px;
+
+    /* Kurzschreibweise: oben/unten und links/rechts gleich */
+    /* padding: 10px, 20px; */
+}
+
+/* Besuchter Link */
+/* a:visited {
+
+} */
+
+/* wenn Maus über Link */
+a.navi:hover {
+    background-color: black;
+    background-color: black;
+    color: white;
+}
+
+/* wenn Maustaste gedrückt ist */
+a.navi:active {
+    background-color: gray;
+    color: white;
+
+}
+
+
+/* Gegenspieler zur Klasse */
+
+
+a.aktuell {
+    border: 1px solid red;
+    background-color: aliceblue;
+}
