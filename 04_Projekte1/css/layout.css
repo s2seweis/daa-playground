@@ -81,3 +81,8 @@ p::first-line{
 .letter-spacing{
     letter-spacing: 10px;
 }
+
+.img {
+    display: flex;
+    justify-content: center;
+}
