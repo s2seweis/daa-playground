@@ -52,6 +52,17 @@ span {
     }
   }
 
+  /* ### Liste */
+
+  .background-color{
+    background-color: #003F4E;
+    width: 300px;
+    color: #BAE0F9;
+  }
+
+  li{
+    margin-top: 9px;
+  }
 
 
 

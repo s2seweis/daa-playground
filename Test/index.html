@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    .owl-carousel {
+      position: relative;
+    }
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      outline: none;
+      padding: 0 1rem;
+    }
+    .owl-nav>button>svg {
+        filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.3));
+        /* text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    }
+    .owl-theme .owl-nav [class*="owl-"] {
+      outline: none;
+    }
+    .owl-theme .owl-nav [class*="owl-"]:hover {
+      background: none;
+    }
+    .container_item_1 {
+      background: url("https://images.pexels.com/photos/15594197/pexels-photo-15594197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .container_item_2 {
+      background: url("https://images.pexels.com/photos/6089654/pexels-photo-6089654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    .container_item_3 {
+      background: url("https://images.pexels.com/photos/7208659/pexels-photo-7208659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .container_item_4 {
+      background: url("https://images.pexels.com/photos/5859320/pexels-photo-5859320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    .container_item_5 {
+      background: url("https://images.pexels.com/photos/3776555/pexels-photo-3776555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .container_item_6 {
+      background: url("https://images.pexels.com/photos/3746156/pexels-photo-3746156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .container_image {
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    @media only screen and (max-width: 766px) {
+        .owl-carousel{
+            padding: 0 1rem;
+        }
+        .container_image {
+            height: 250px !important;
+        }
+    }
+  </style>
+  <body>
+    <section class="scrollable-section">
+      <!-- Caraousel 1 -->
+      <div class="m-0 p-0 position-relative">
+        <div class="owl-carousel owl-theme position-relative my-4">
+          <div class="container-fluid p-0 m-0">
+            <div class="row w-100 m-0 p-0">
+              <div class="col-md-6 m-0 p-0 container_image container_item_1 d-flex align-items-end text-light h2 p-3" >
+                Nature
+              </div>
+              <div class="col-md-6 m-0 p-0 container_image container_item_2 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                1. Water Cascades
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid p-0 m-0">
+            <div class="row w-100 m-0 p-0">
+              <div class="col-md-6 m-0 p-0 container_image container_item_3 d-flex align-items-end text-light h2 p-3" >
+                Nature
+              </div>
+              <div class="col-md-6 m-0 p-0 container_image container_item_4 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                2. Water Cascades
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid p-0 m-0">
+            <div class="row w-100 m-0 p-0">
+              <div class="col-md-6 m-0 p-0 container_image container_item_5 d-flex align-items-end text-light h2 p-3" >
+                Nature
+              </div>
+              <div class="col-md-6 m-0 p-0 container_image container_item_6 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                3. Water Cascades
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scrollable-section">
+      <!-- Caraousel 2 -->
+      <div class="m-0 p-0 position-relative">
+          <div class="owl-carousel owl-theme position-relative my-4">
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_5 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_6 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  1. Water Cascades
+                </div>
+              </div>
+            </div>
+    
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_1 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_2 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  2. Water Cascades
+                </div>
+              </div>
+            </div>
+    
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_3 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_4 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  3. Water Cascades
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="scrollable-section">
+      <!-- Caraousel 3 -->
+      <div class="m-0 p-0 position-relative">
+          <div class="owl-carousel owl-theme position-relative my-4">
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_6 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_5 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  1. Water Cascades
+                </div>
+              </div>
+            </div>
+    
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_4 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_3 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  2. Water Cascades
+                </div>
+              </div>
+            </div>
+    
+            <div class="container-fluid p-0 m-0">
+              <div class="row w-100 m-0 p-0">
+                <div class="col-md-6 m-0 p-0 container_image container_item_2 d-flex align-items-end text-light h2 p-3" >
+                  Nature
+                </div>
+                <div class="col-md-6 m-0 p-0 container_image container_item_1 d-flex justify-content-center text-light shadow h2 p-3 align-items-center" >
+                  3. Water Cascades
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      $(document).ready(() => {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          center: true,
+          dots: false,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          navText: [
+            `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b3b3b3" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16" >
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>`,
+            `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b3b3b3" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16" >
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"   />
+            </svg>`
+        ]
+        });
+      });
+    </script>
+
+    <script>
+      $(() => $.scrollify({ section : ".scrollable-section" }))
+    </script>
+  </body>
+</html>

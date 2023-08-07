@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+
+    <style>
+
+        ul{
+
+        /* # disc gefüllter Kreis, square rechteck, circle ungefüllter Kreis */
+
+         /* list-style-type: disc; */
+         /* list-style-type: square; */
+         list-style-type: circle;
+        }
+
+        /* 1Ebene>2Ebene>3Ebene */
+        ul>ul>ul{
+            list-style: disc;
+        }
+
+        .innereListe-1{
+            list-style-type: square;
+            list-style-image: url(../bilder/React-icon-small.svg.png);
+        }
+        .innereListe-2{
+            list-style-type: circle;
+        }
+
+        ol{
+            list-style-type: decimal;
+        }
+
+        ol>ol{
+            list-style-type: lower-alpha;
+            /* list-style-type: decimal; */
+            /* list-style-type: upper-alpha; */
+            /* list-style-type: upper-roman; */
+            /* list-style-type: lower-greek; */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- ol steht für sortierte Liste-->
+
+    <ol>
+        <!-- li für jeden Listeneintrag-->
+        <li>Montag</li>
+        <ol>
+            <li>Vormittag</li>
+            <ul>
+                <li>10 Uhr</li>
+                <li>11 Uhr</li>
+            </ul>
+            <li>Nachmittag</li>
+        </ol>
+        <li>Dienstag</li>
+        <li>Mittwoch</li>
+    </ol>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, odio! Eveniet hic nulla fuga, minus dolore et
+        ab labore laudantium soluta ducimus, eum, consectetur odit quo quae. Iste, ad adipisci?</p>
+
+
+    <ol start="4">
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+    </ol>
+
+
+    <ul>
+        <li>Hund</li>
+        <ul>
+            <li>kleine Hunde</li>
+            <ul>
+                <li>Dackel</li>
+                <ul class="innereListe-1">
+                    <li>Rauhaardackel</li>
+                </ul>
+                <li>Pudel</li>
+                <ul class="innereListe-2">
+                    <li>Zwergpudel</li>
+                </ul>
+            </ul>
+            <li>grosse Hunde</li>
+        </ul>
+        <li>Katze</li>
+        <li>Maus</li>
+    </ul>
+
+</body>
+
+</html>
