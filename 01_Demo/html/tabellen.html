@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+         /* /* html, body, table {
+            height: 100%;
+         } */
+
+        table {
+            border: 3px solid orange;
+            width: 600px;
+            /* width: 100%; */
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th{
+            /* background-color: black; */
+            /* color: beige; */
+            height: 50px;
+            background-color: black;
+            color: beige;
+        }
+
+        .back-black{
+            background-color: black;
+            color: beige;
+        }
+
+        .breit{
+            width: 40%;
+            height: 100px;
+        } */
+
+
+        #tab1{
+            border: 2px solid red;
+        
+        }
+
+        #tab1 td{
+            border: 1px solid yellow;
+        }
+
+        #tab2 {
+            border: 2px solid blue;
+        }
+
+        #tab2 td{
+            border: 1px solid green;
+        }
+
+        /* th{
+            background-color: gold;
+        } */
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <!--Emmet Snippet = table>tr*6>td*5-->
+
+    <table border="1" id="1">
+        <tr>
+            <td colspan="3">1</td>
+            <!-- <td>2</td>
+            <td>3</td> -->
+            <td>4</td>
+            <td rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td colspan="3">7</td>
+            <!-- <td>8</td>
+            <td>9</td> -->
+            <!-- <td>10</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">11</td>
+            <!-- <td >12</td> -->
+            <td>13</td>
+            <td colspan="2" rowspan="3">14</td>
+            <!-- <td>15</td> -->
+        </tr>
+        <tr>
+            <td rowspan="3">16</td>
+            <td>17</td>
+            <td rowspan="3">18</td>
+            <!-- <td>19</td> -->
+            <!-- <td>20</td> -->
+        </tr>
+        <tr>
+            <!-- <td>21</td> -->
+            <td rowspan="">22</td>
+            <!-- <td>23</td> -->
+            <!-- <td>24</td> -->
+            <!-- <td>25</td> -->
+        </tr>
+        <tr>
+            <!-- <td>26</td> -->
+            <td>27</td>
+            <!-- <td>28</td> -->
+            <td>29</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 50px;" border="1" id="2">
+        <tr>
+            <td colspan="3">1</td>
+            <!-- <td>2</td>
+            <td>3</td> -->
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td colspan="2" rowspan="3">14</td>
+            <!-- <td>15</td> -->
+        </tr>
+        <tr>
+            <td rowspan="3">16</td>
+            <td>17</td>
+            <td>18</td>
+            <!-- <td>19</td> -->
+            <!-- <td>20</td> -->
+        </tr>
+        <tr>
+            <!-- <td>21</td> -->
+            <td>22</td>
+            <td>23</td>
+            <!-- <td>24</td> -->
+            <!-- <td>25</td> -->
+        </tr>
+        <tr>
+            <!-- <td>26</td> -->
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <table  style="margin-top: 50px;" id="3">
+        <tr class="back-black">
+            <th class="breit">Ausbildung</th>
+            <td>Quartal 1</td>
+            <td>Quartal 2</td>
+            <td>Quartal 3</td>
+            <td>Quartal 4</td>
+        </tr>
+        <tr>
+            <th>AWE</th>
+            <td>100</td>
+            <td>200</td>
+            <td>50</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <th>Fisi</th>
+            <td>24</td>
+            <td>17</td>
+            <td>154</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>Teilzeit</th>
+            <td colspan="2">58</td>
+            <!-- <td>17</td> -->
+            <td colspan="2">47</td>
+            <!-- <th>23</th> -->
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>

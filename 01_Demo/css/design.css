@@ -56,12 +56,18 @@ span {
 
   .background-color{
     background-color: #003F4E;
-    width: 300px;
     color: #BAE0F9;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
   }
 
   li{
     margin-top: 9px;
+  }
+
+  body{
+    margin: 30px;
   }
 
 
