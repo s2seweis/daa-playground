@@ -1,0 +1,66 @@
+table {
+    border: 3px solid orange;
+    width: 600px;
+    /* width: 100%; */
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    /* background-color: black; */
+    /* color: beige; */
+    height: 50px;
+    /* background-color: black; */
+    /* color: beige; */
+    border: 1px solid black;
+}
+
+.back-black{
+    background-color: black;
+    color: beige;
+}
+
+.breit{
+    width: 40%;
+    height: 100px;
+} */
+
+
+#tab1{
+    border: 2px solid red;
+
+}
+
+/* #tab1 td{
+    border: 1px solid yellow;
+}
+
+#tab2 {
+    border: 2px solid blue;
+}
+
+#tab2 td{
+    border: 1px solid green;
+} */
+
+/* th{
+    background-color: gold;
+} */
+
+
+.table-2 {
+    margin-top: 100px;
+    border: 4px solid olive;
+
+}
+
+
+#stringIsRequired {
+    margin-top: 100px;
+    border: 2px solid aquamarine;
+
+}
+
