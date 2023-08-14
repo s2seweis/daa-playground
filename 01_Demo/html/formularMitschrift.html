@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularelemente </title>
+
+    <style>
+        form {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+        }
+
+        .inline {
+            display: inline;
+        }
+        .e1{
+            margin: 15px 0px 15px 0px;
+        }
+
+        fieldset, legend{
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        legend{
+            padding: 20px;
+        }
+        input[type=text], input[type=email]{
+            width: 98%;
+        }
+
+        textarea{
+            margin: 0px 5px 0px 5px;
+            width: 98%;
+            height: 200px;
+            /* resize: none; */
+        }
+
+        #mario{
+            /* width: 100px; */
+            /* height: 400px; */
+            /* float: left; */
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--alt = alternative Beschreibung - Falls Bild nicht geladen wird bzw. Barrierefreiheit-->
+    <!-- -->
+    <img id="mario" src="../bilder/React-icon-small.svg.png" alt="react" />
+    <img src="../bilder/React-icon-small.svg.png" alt="react" />
+
+
+    <!--action - datei an die gesendet werden soll, serverseitige Auswertung machen-->
+    <!--method get/post get- Daten an die Url gehängt, post - "unsichtbar", manche Daten sollten einfach nicht sicher sein-->
+
+    <!-- attribut name dient zur späteren Auswertung mit PHP css/js Zugriff über ID - bei-->
+    <form action="#" method="get">
+        <!-- <form action="#" method="get"> -->
+        <legend>Vorname</legend>
+        <label class="e1" for="#">Vorname</label>
+
+        <!--Attribut name benötigt für die Anwendung-->
+        <input type="text" name="vorname" id="vorname" placeholder="Max" value="Max">
+
+        <label class="e1" for="geheim">Password:</label>
+        <input type="password" name="geheim" id="geheim" value="1234">
+        <label class="e1" for="mailadresse">Mailadresse:</label>
+        <!--Prüft in Ansätzen, ob es eine Mail Adresse sein könnte (Aufbau z.B. @)-->
+        <!--Achtung: keine Prüfung, ob Adresse existiert!!!-->
+        <input type="email" name="mail" id="mail" placeholder="info@test.com" value="info@web.com">
+        <label class="e1" for="geburtsdatum">Geburtsdatum:</label>
+        <input type="date" name="geburtstag" id="geburtstag" value="2018-07-22">
+        <label class="e1" for="farbe">Farbe:</label>
+        <input type="color" name="farbe" id="farbe" value="#FF0000">
+
+        <label class="e1" for="geschlecht">Geschlecht:</label>
+        <!-- single-choice/ einfachauswahl-->
+        <!-- müssen alle gleichen "name" haben, ID muss sich unterscheiden, values muss vergeben sein (spätere Auswertung)-->
+        <input type="radio" name="geschlecht" id="g1" value="w"> <span>weiblich</span>
+        </input>
+        <input type="radio" name="geschlecht" id="g2" value="m"> <span>mänlich</span>
+        </input>
+        <input type="radio" name="geschlecht" id="g3" value="d"> <span>divers</span>
+        </input>
+
+
+        <!-- multiple choice/ mehrfachauswahl-->
+        <!-- müssen alle gleichen "name" haben, ID muss sich unterscheiden, values muss vergeben sein (spätere Auswertung)-->
+        <!-- with -checked kann man eine Vorauswahl treffen-->
+        <label class="e1" for="vorerfahrung">Vorerfahrungen:</label>
+        <input type="checkbox" name="erfahrung" id="e1" value="prog"><span>Programmierung</span>
+        <input type="checkbox" name="erfahrung" id="e2" value="nw"><span>Netzwerke</span>
+        <input type="checkbox" name="erfahrung" id="e3" value="kauf" checked><span>Kaufm.</span>
+
+
+        <!--also the title is clickable-->
+        <div style="margin-top: 10px;">
+
+            <label class="inline" for="e4"> <input type="checkbox" name="erfahrung" id="e4"
+                    value="prog">Programmierung</label>
+            <label class="inline" for="e5"> <input type="checkbox" name="erfahrung" id="e5"
+                    value="prog">Netzwerke</label>
+            <label class="inline" for="e6"> <input type="checkbox" name="erfahrung" id="e6" value="prog"> Kaufm.
+            </label>
+        </div>
+
+        <label class="e1"  for="vorerfahrung">Vorerfahrungen:</label>
+        <!--size = sichtbare einträge-->
+        <select name="vorerfahrung" id="vorerfahrung">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="sql">SQL</option>
+        </select>
+
+        <label class="e1"  for="nachricht">Ihre Nachricht:</label>
+        <textarea name="nachricht" id="nachricht">Hier steht das </textarea>
+        
+        
+        <label class="e1"  for="nachricht">Lieblingszahl:</label>
+        <input type="number" name="zahl" id="zahl" min="10" max="20" step="0.1">
+
+        <!--Bestimme Tag werden nicht schloßen, Start und Ende liegt im Einen-->
+        <br>
+
+        <input style="margin-top: 15px;" type="submit" value="Absenden">
+        <input style="margin-top: 15px;" type="submit" value="Formular leeren">
+
+    </form>
+
+
+</body>
+
+</html>
