@@ -1,0 +1,93 @@
+﻿<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		form{
+			background-color: #003f4e;
+			border: 1px solid #86c2bd;
+			color: #bae0f9;
+			font-family: arial;
+			width: 270px;
+			padding: 15px;
+			text-align: center;
+		}
+
+		label{
+			display: block;
+			margin-top: 15px;
+		}
+
+		a{
+			/* color: #fff; */
+			color: red;
+			text-decoration: none;
+		}
+
+		fieldset{
+			margin: 10px;
+			border-radius: 20px;
+		}
+
+		legend{
+			background-color:#f9baf9;
+			color: #004e0a;
+			border-radius: 10px;
+			padding: 5px;
+		}
+
+		input:not([type=radio]), select{
+			width: 90%;
+			margin: 5px;
+			border-radius: 10px;
+			padding: 5px;
+		}
+
+		#hinweise{
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<form action="verpflegung.php" method="post">
+	
+		<h2>Verpflegungsrechner</h2>
+		
+		<fieldset>
+			<legend>Treffen Sie Ihre Auswahl:</legend>
+			<label for="frueh">Frühstück</label>
+			<select name="frueh" id="" size=4>
+				<option value="s">Standard 7,50</option>
+				<option value="k">Kontinental 11,50</option>
+				<option value="b" selected >Business 14,50</option>
+				<option value="p">Präsidenten 19,50</option>
+			</select>
+			<br />
+			<label for="mittag">Mittagessen 22,00</label>
+			<input type="radio" name="mittag" value="true" checked /><span>ja</span>
+			<input type="radio" name="mittag" value="false" /><span>nein</span>
+			<br />
+			<label for="abend">Abendessen 13,50</label>
+			<input type="radio" name="abend" value="true" checked /><span>ja</span>
+			<input type="radio" name="abend" value="false" /><span>nein</span>
+			<br />
+			
+		</fieldset>
+		
+		<fieldset>
+			<legend>Ihre Daten:</legend>
+			<label for="mitName">Name:</label>
+			<input type="text" name="mitName" placeholder="Ihr Name" />
+			<label for="mitMail">E-Mail:</label>
+			<input type="email" name="mitMail"  placeholder="name@domain.de"/>
+		</fieldset>
+		
+		<fieldset id="hinweise">
+			<legend>Weitere Hinweise:</legend>
+			<p>Wir bearbeiten Ihre Anfrage sobald als möglich. Bei weiteren Fragen wenden Sie sich bitte an <a href="mailto:info@essen.de">info@essen.de</a>. Vielen Dank!</p>
+			<input type="submit"  value="Absenden"/>
+		</fieldset>
+	</form>
+</body>
+</html>

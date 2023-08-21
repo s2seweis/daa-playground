@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe Mitglieder</title>
+    <link rel="stylesheet" href="../css/mitglieder.css">
+</head>
+
+<body>
+
+
+    <h1>Organisation: Mitglieder und </h1>
+
+    <h2>Mitgliederliste</h2>
+
+    <table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Alter</th>
+            <th>Position</th>
+        </tr>
+        <tr>
+            <td>Lisa</td>
+            <td>Müller</td>
+            <td>28</td>
+            <td>Manager</td>
+        </tr>
+    </table>
+
+    <h2>Kontakte hinzufügen</h2>
+    <form action="#" method="post">
+        <label for="vorname">Vorname:</label>
+        <input type="text" name="vorname" id="vorname">
+        <label for="nachname">Nachname:</label>
+        <input type="text" name="vorname" id="vorname">
+        <label for="alter">Alter:</label>
+        <input type="number" name="alter" id="aler" min="0">
+        <label for="pos">Position:</label>
+        <input type="text" name="pos" id="pos">
+        <label for="mail">E-Mail:</label>
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Hinzufügen">
+    </form>
+
+    <h2>Organisationstruktur</h2>
+
+
+
+    <ol>
+        <li>Leitung</li>
+        <ol>
+            <li>Manager</li>
+            <li>Assistant</li>
+        </ol>
+        <li>Mitarbeiter</li>
+        <ol>
+            <li>Techniker</li>
+            <li>Verkäufer</li>
+        </ol>
+    </ol>
+
+    <h2>Zusätzliche Informationen</h2>
+    <table>
+        <tr>
+            <th>Name der Ereignisser</th>
+            <th>Datum</th>
+            <th>Beschreibung</th>
+        </tr>
+        <tr>
+            <td>Team-Building</td>
+            <td>15. August</td>
+            <td>Outdoor Aktiviäten für alle Mitglieder</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

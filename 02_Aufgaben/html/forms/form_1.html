@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<img src="hotel.jpg" alt="Bild vom Hotel" width="250" align="left" hspace="10" />
+	<h2>Willkommen im Hotel</h2>
+	<h1>Sonnenschein</h1>
+	<hr />
+	<p>Informieren Sie sich über aktuelle Angebote zur Eröffnung des Neubaus.</p>
+	<hr />
+	<form action="berechnung.php" method="post">
+		<p>Zimmerausstattung:</p>
+		<select name="zimmer" id="zimmer">
+			<option value="80">einfach</option>
+			<option value="100">standard</option>
+			<option value="120">gehoben</option>
+			<option value="140">luxus</option>
+		</select>
+		<p>Buchungszeit:</p>
+		<table>
+			<tr>
+				<td><input type="radio" name="saison" value="0" /></td>
+				<td>Vorsaison (Mai/Juni)</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="saison" value="20" /></td>
+				<td>Hauptsaison (Juli/August)</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="saison" value="10" /></td>
+				<td>Nachsaison (September)</td>
+			</tr>
+		</table>
+		<p>Buchungstage: <input type="text" name="tage" value="1" size="3" /><br />
+		<input type="submit" submit="berechnen" /><input type="reset" value="löschen" /></p>
+	</form>
+	<p>Anreise mit dem Auto: <a href="http://www.de.map24.com">map24</a></p>
+	<p>Anreise mit dem Bahn: <a href="http://reiseauskunft.bahn.de">Bahnauskunft</a></p>
+
+</body>
+</html>

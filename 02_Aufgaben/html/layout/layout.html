@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    html,
+    body {
+      height: 99%;
+    }
+
+    div {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    #wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    #reihe1 {
+      background-color: yellow;
+    }
+
+    #reihe4,
+    #reihe2 {
+      display: flex;
+      flex-direction: row;
+      flex: 3;
+    }
+
+    #reihe2 {
+      background-color: orange;
+    }
+
+    #reihe3 {
+      flex: 2;
+      background-color: red;
+    }
+
+    #r21 #r22 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #reihe4 {
+      background-color: aqua;
+    }
+
+    #r4l {
+      /* flex: 2; */
+    }
+
+    /* instead of usig an ID */
+    /* .column {
+      display: flex;
+      flex-direction: column;
+    } */
+
+
+    .flex2{
+        flex: 2;
+    }
+
+    .punkte{
+        border: 3px dotted green;
+    }
+
+  </style>
+
+  <body>
+    <!-- im HTML gibt es die ID nur ein mal/im CSS so oft wie ich will -->
+
+    <div id="wrapper">
+      <div id="reihe1">1</div>
+      <div id="reihe2">
+        <div id="r21" class="punkte">
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+        <div>5</div>
+        <div id="r2r">
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+        </div>
+      </div>
+      <div id="reihe3" class="flex2">9</div>
+      <div id="reihe4">
+        <div id="r41" class="flex2">10</div>
+        <div>11</div>
+      </div>
+    </div>
+  </body>
+</html>

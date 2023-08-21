@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<title>Formular2</title>
+	<style>
+		form{
+	background-color: #003f4e;
+	border: 1px solid #86c2bd;
+	color: #bae0f9;
+	font-family: arial;
+	width: 380px;
+	padding: 10px;
+	text-align: center;
+}
+
+label{
+	display: block;
+	margin-top: 5px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+fieldset{
+	margin: 5px;
+	border-radius: 20px;
+}
+
+legend{
+	background-color:#bae0f9;
+	color: #003f4e;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+input, select{
+	width: 90%;
+	border-radius: 10px;
+	padding: 5px;	
+}
+select{
+	width: 95%;
+}
+
+input[type=radio], input[type=checkbox]{
+	width: 2%;
+}
+
+input[type=submit], input[type="reset"]{
+	width: 49%;
+}
+
+#auswahl{
+	text-align: left;
+}
+
+table{
+	width: 100%;
+}
+
+td{
+	border: 1px solid #bae0f9;
+}
+
+tr:nth-child(even){
+	background-color: #bae0f9;
+	color:     #012326;
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<form action="" >
+	
+		<fieldset>
+			<legend>Persönliche Angaben</legend>
+			<!-- Anschrift -->
+				<label for="anrede">Anrede:</label>
+				<select name="anrede" id="anrede">
+					<option value="herr">Herr</option>
+					<option value="frau">Frau</option>
+				</select>
+				<label for="vorname">Vorname:</label>
+				<input type="text"  name="vorname"/>
+				<label for="nachname">Nachname:</label>
+				<input type="text"   name="nachname"/>		
+				<label for="email">EMail</label>
+				<input type="email"  name="email" />	
+			</fieldset>
+		
+		<fieldset id="auswahl">
+			<legend>Infomaterial wählen</legend>
+			<!-- Ausbildung -->
+			
+				<label for="land" >Ich interessiere mich für folgendes Land:</label>
+				<input type="radio" name="land" value="de"/>Deutschland <br />
+				<input type="radio" name="land" value="fr"/>Frankreich <br />
+				<input type="radio"  name="land" checked="checked" value="it"/>Italien <br /><br />
+
+				<label for="essen" >Ich möchte folgende Verpflegung:</label>
+				<input type="checkbox" name="essen" value="frueh"/>Frühstück <br />
+				<input type="checkbox" name="essen" value="mittag"/>Mittagessen <br />
+				<input type="checkbox" name="essen" value="abend"/>Abendessen	<br />		
+		</fieldset>
+		
+		<fieldset >
+			<legend>Preisübersicht</legend>
+				<table>
+					<tr>
+						<th>Land</th>
+						<th>Verpflegung</th>
+						<th>Preis</th>
+					</tr>
+					<tr>
+						<td>Deutschland</td>
+						<td>Frühstück</td>
+						<td>199,00</td>
+					</tr>
+					<tr>
+						<td>Deutschland</td>
+						<td>Mittagessen</td>
+						<td>199,00</td>
+					</tr>
+					<tr>
+						<td>Deutschland</td>
+						<td>Abendessen</td>
+						<td>299,00</td>
+					</tr>
+					<tr>
+						<td>Frank. / Italien</td>
+						<td>Frühstück</td>
+						<td>249,00</td>
+					</tr>
+					<tr>
+						<td>Frank. / Italien</td>
+						<td>Mittagessen</td>
+						<td>299,00</td>
+					</tr>
+					<tr>
+						<td>Frank. / Italien</td>
+						<td>Abendessen</td>
+						<td>319,00</td>
+					</tr>
+					<tr>
+						<td colspan=3>Der Preis für Ihre Verpflegung berechnet sich entsprechend Ihrer Auswahl.</td>
+					</tr>
+				</table>
+		</fieldset>
+		<!-- Buttons -->
+		<fieldset >
+		<legend>Ab in den Urlaub</legend>
+			<input type="submit"  value="Formular abschicken"/>
+			<input type="reset" value="Formular löschen" />
+		</fieldset>
+	</form>
+	
+	
+</body>
+</html>

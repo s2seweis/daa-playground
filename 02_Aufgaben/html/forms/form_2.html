@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html lang="de-DE">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="buchung.css" />
+	</head>
+<body>
+	<form action="berechnung.php" method="post">
+		<h1>Hotel zur Meeresschildkröte</h1>
+		<h2>Buchungsanfrage</h2>
+		<hr />
+		<p>Informieren Sie sich über die aktuellen Saisonpreise.</p>
+		<hr />
+		<img src="schildkroete.jpg" alt="" />
+		
+		<fieldset>
+			<label>Zimmerausstattung:</label>
+			<select name="zimmer" id="zimmer">
+				<option value="80">einfach</option>
+				<option value="100">standard</option>
+				<option value="120">gehoben</option>
+				<option value="140">luxus</option>
+			</select>
+			
+			<label>Buchungszeit:</label>
+			<ul>
+				<li><input type="radio" name="saison" value="0" />Vorsaison (Mai/Juni)</li>
+				<li><input type="radio" name="saison" value="20" />Hauptsaison (Juli/August)</li>
+				<li><input type="radio" name="saison" value="10" />Nachsaison (September)</li>
+			</ul>	
+			
+			<label>Buchungstage: </label> 
+			<input type="number" name="tage" value="1" min=1 max=30 />
+			<input type="submit" submit="berechnen" /><input type="reset" value="löschen" />		
+		</fieldset>
+		
+		<p>Anreise mit dem Auto: <a href="http://www.de.map24.com">map24</a></p>
+		<p>Anreise mit dem Bahn: <a href="http://reiseauskunft.bahn.de">Bahnauskunft</a></p>
+	</form>
+</body>
+</html>
