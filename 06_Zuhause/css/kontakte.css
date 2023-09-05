@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+}
+
+label {
+    display: block;
+}
+
+form {
+    background-color: beige;
+    width: 100%;
+    border: 1px solid;
+    background-color: #cccccc;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+ol  {
+    list-style-type: lower-roman;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: #cccccc;
+}

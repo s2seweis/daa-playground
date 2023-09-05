@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aufgabe: Organisationsmitglieder und Kontake</title>
+    <link rel="stylesheet" href="./css//kontakte.css" />
+
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Emmet Snippet = table>tr*3>td*5-->
+
+    <h2>Mitglieder anzeigen:</h2>
+
+    <table>
+      <tr>
+        <th>Nr.</th>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Alter</th>
+        <th>Position</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Jawey</td>
+        <td>Fetcher</td>
+        <td>32</td>
+        <td>Major</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jim</td>
+        <td>Striker</td>
+        <td>25</td>
+        <td>Student</td>
+      </tr>
+    </table>
+
+    <h2>Kontake hnzufügen:</h2>
+
+    <!-- form>label*4>input*4 -->
+
+    <!-- <form action="">
+      <label for=""
+        ><input type="text" /><input type="text" /><input type="text" /><input
+          type="text" /><input type="text" /></label
+      ><label for=""
+        ><input type="text" /><input type="text" /><input type="text" /><input
+          type="text" /><input type="text" /></label
+      ><label for=""
+        ><input type="text" /><input type="text" /><input type="text" /><input
+          type="text" /><input type="text" /></label
+      ><label for=""
+        ><input type="text" /><input type="text" /><input type="text" /><input
+          type="text" /><input type="text"
+      /></label>
+    </form> -->
+
+    <form>
+      <!-- <legend>Vorname</legend> -->
+      <label class="e1" for="#">Vorname</label>
+      <input
+        type="text"
+        name="vorname"
+        id="vorname"
+        placeholder="John"
+        value="John"
+      />
+
+      <label class="e1" for="#">Nachname</label>
+      <input
+        type="text"
+        name="nachname"
+        id="nachname"
+        placeholder="John"
+        value="John"
+      />
+
+      <label class="e1" for="#">Alter</label>
+      <input
+        type="number"
+        name="alter"
+        id="alter"
+        placeholder="John"
+        value="John"
+      />
+
+      <label class="e1" for="#">Vorname</label>
+      <input
+        type="text"
+        name="vorname"
+        id="vorname"
+        placeholder="John"
+        value="John"
+      />
+      <br />
+      <input type="submit" value="Absenden" />
+    </form>
+
+    <h2>Organisationstruktur:</h2>
+
+    <!-- ol>li*2>ol>li*2 -->
+
+    <ol>
+      <li>
+        Leitung
+        <ol>
+          <li>Manager</li>
+          <li>Assiatant</li>
+        </ol>
+      </li>
+      <li>
+        Mitarbeiter
+        <ol>
+          <li>Techniker</li>
+          <li>Verkäufer</li>
+        </ol>
+      </li>
+    </ol>
+
+    <h2>Zusätzliche Informationen</h2>
+
+    <!-- table>tr*2>th*3 -->
+
+    <table>
+      <tr>
+        <th>Name der Ereignisse</th>
+        <th>Datum</th>
+        <th>Beschreibung</th>
+      </tr>
+      <tr>
+        <td>Team-Building</td>
+        <td>15. August</td>
+        <td>Outdoor Aktivitäten für alle</td>
+      </tr>
+    </table>
+  </body>
+</html>

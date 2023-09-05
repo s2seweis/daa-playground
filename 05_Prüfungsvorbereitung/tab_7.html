@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .seat {
+    background-color: #e0e0e0;
+  }
+  .wheelchair {
+    background-color: #ffc107;
+  }
+</style>
+<title>Sitzplatzreservierung im Veranstaltungssaal</title>
+</head>
+<body>
+  <h1>Sitzplatzreservierung im Veranstaltungssaal</h1>
+  <table>
+    <tr>
+      <th></th>
+      <th colspan="5">Bühne</th>
+      <th></th>
+      <th colspan="5">Bühne</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">VIP</td>
+      <td rowspan="2" class="wheelchair">Rollstuhl</td>
+      <td colspan="2">VIP</td>
+      <td></td>
+      <td colspan="2">VIP</td>
+      <td rowspan="2" class="wheelchair">Rollstuhl</td>
+      <td colspan="2">VIP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="seat">1</td>
+      <td class="seat">2</td>
+      <td rowspan="2" class="wheelchair seat">3</td>
+      <td class="seat">4</td>
+      <td class="seat">5</td>
+      <td></td>
+      <td class="seat">6</td>
+      <td class="seat">7</td>
+      <td rowspan="2" class="wheelchair seat">8</td>
+      <td class="seat">9</td>
+      <td class="seat">10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Oberrang</td>
+      <td class="seat">11</td>
+      <td class="seat">12</td>
+      <td class="seat">13</td>
+      <td class="seat">14</td>
+      <td class="seat">15</td>
+      <td rowspan="2">Oberrang</td>
+      <td class="seat">16</td>
+      <td class="seat">17</td>
+      <td class="seat">18</td>
+      <td class="seat">19</td>
+      <td class="seat">20</td>
+    </tr>
+    <tr>
+      <td class="seat">21</td>
+      <td class="seat">22</td>
+      <td class="seat">23</td>
+      <td class="seat">24</td>
+      <td class="seat">25</td>
+      <td class="seat">26</td>
+      <td class="seat">27</td>
+      <td class="seat">28</td>
+      <td class="seat">29</td>
+      <td class="seat">30</td>
+    </tr>
+  </table>
+</body>
+</html>
