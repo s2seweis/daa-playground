@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hristo</title>
+
+    <link rel="stylesheet" href="..css">
+
+    <style>
+        body {
+
+            background: url('') no-repeat center fixed;
+
+            background-size: cover;
+
+        }
+
+        .image {
+
+            position: relative;
+
+            width: 500px;
+
+            height: 200px;
+
+        }
+
+        h1 {
+
+            color: red;
+
+            margin: 0px;
+
+            text-shadow: 2px 2px 2px gray;
+
+            padding: 2px;
+
+        }
+
+        h1:first-letter {
+
+            background-color: white;
+
+            color: blue;
+
+            font-size: 1.5em;
+
+            font-weight: initial;
+
+            margin: 1px;
+
+            text-shadow: 2px 2px 2px gray;
+
+        }
+
+        h2 {
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            font-weight: bold;
+
+            text-align: center;
+
+            color: blue;
+
+            letter-spacing: 0.4em;
+
+            word-spacing: 2em;
+
+        }
+
+        p:first-line {
+
+            background-color: yellowgreen;
+
+        }
+
+
+
+        a.link,
+        a.link:visited {
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            color: black;
+
+            background-color: white;
+
+        }
+
+
+
+        a.link:hover {
+
+            background-color: yellow;
+
+            color: blue;
+
+            box-shadow: 5px 5px 5px grey;
+
+            border-radius: 5px;
+
+        }
+
+
+
+        a.link:active {
+
+            color: red;
+
+        }
+
+
+
+        .gradient {
+
+            background-image: repeating-conic-gradient(blue 10%, red 20%, white 30%);
+
+            background-size: cover;
+
+            width: calc(100%);
+
+            height: auto;
+
+            box-shadow: 19px 15px 32px black;
+
+        }
+
+
+
+        a.navi,
+        a.navi:visited {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background-color: lightblue;
+
+            border: 1px solid black;
+
+            border-radius: 5px;
+
+            text-decoration: none;
+
+            padding: 5px 20px;
+
+            margin: 10px;
+
+        }
+
+
+
+        a.navi:hover {
+
+            color: blue;
+
+            box-shadow: 5px 5px 5px gray;
+
+            border-radius: 5px;
+
+        }
+
+
+
+        a.navi:active {
+
+            background-color: red;
+
+        }
+
+
+
+        a.navi.aktuell {
+
+            border: 1px solid red;
+
+            background: white;
+
+        }
+
+
+
+        .roll {
+
+            background: transparent;
+
+            position: relative;
+
+            top: 0px;
+
+            border: 1px solid lightblue;
+
+            border-radius: 25px;
+
+        }
+
+
+
+        .ball {
+
+            width: 20px;
+
+            height: 20px;
+
+            background-color: transparent;
+
+            position: relative;
+
+            animation: cub 5s linear 2s infinite alternate;
+
+            border: 1px solid lightblue;
+
+            border-radius: 50%;
+
+        }
+
+
+
+        @keyframes cub {
+
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: red;
+                left: 25%;
+                top: 0px;
+            }
+
+            50% {
+                background-color: white;
+                left: 50%;
+                top: 0px;
+            }
+
+            75% {
+                background-color: blue;
+                left: 75%;
+                top: 0px;
+            }
+
+            100% {
+                background-color: red;
+                left: 99%;
+                top: 0px;
+            }
+
+        }
+
+        img {
+
+            width: 500px;
+
+            height: 200px;
+
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child) {
+                display: none;
+            }
+
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar" id="myNavbar">
+        <a href="index.html" class="active">Startseite</a>
+        <a href="#">Über Uns</a>
+        <a href="form.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+        </a>
+    </div>
+
+    <!-- <a href="index.html" class="navi">Go Back</a> -->
+
+    <div class="gradient">
+
+        <h1>Hristo Ivanov</h1>
+
+    </div>
+
+    </br>
+
+
+
+    <div class="roll">
+
+        <div class="ball"></div>
+
+    </div>
+
+    </br>
+
+    <button><a href="https://www.beach-inspector.com/de/c/burgas" target="#">website</a></button>
+
+    </br></br>
+
+    <img src="../bilder/burgas.jpg" alt=""></br>
+
+    <h1>Burgas</h1>
+
+    <p>Burgas ist der perfekte Ort für all diejenigen,
+
+        die Erholung und Entspannung in der Natur suchen,
+
+        dabei aber nicht auf den Komfort und das kulturelle Angebot
+
+        einer Großstadt verzichten wollen.
+
+        Burgas lebt und atmet die Geschichte des alten Thrakiens,
+
+        die dir an den historischen Stätten Aquae Calidae und Develtum veranschaulicht wird.
+
+        Der Sea Garden ist die grüne Lunge der Stadt und das Zuhause des jährlich stattfindenden Sand-Festes.
+
+        Die Seenlandschaft und das Naturschutzgebiet laden zum Wandern und Entspannen ein. Burgas hat viel zu bieten.
+
+        Wir waren für dich vor Ort und haben die interessantesten Highlights und die schönsten Strände der Gegend
+        besucht.
+
+        Wenn du mehr erfahren willst, musst du jetzt weiterlesen.</p>
+
+</body>
+
+<script>
+    // JavaScript function to toggle responsive navbar
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+
+</html>

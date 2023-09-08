@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* margin: 0px 50px 0px 50px; */
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child) {
+                display: none;
+            }
+
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+
+        body {
+            background: url(https://img.freepik.com/premium-vector/seamless-pattern-abstract-background-with-futuristic-style-use-business-cover-banner_7505-1820.jpg)
+        }
+
+
+
+        li li {
+            list-style: square;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container_2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+
+
+<div class="navbar" id="myNavbar">
+    <a href="#" class="active">Startseite</a>
+    <a href="#">Über Uns</a>
+    <a href="form.html">Kontakt</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+    </a>
+</div>
+
+
+<body>
+
+    <div style="margin: 0px 50px 0px 50px;">
+
+
+
+        <section id="about">
+            <div class="container">
+                <h1>Gruppenarbeit: Erstelle eine Webseite</h1>
+                <p>Willkommen auf der Portfolio-Website unserer Gruppe. Wir sind ein talentiertes Team von
+                    Einzelpersonen
+                    mit Leidenschaft für die IT, Webentwicklung und Design,
+                    Fotografie usw.].</p>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section style="max-width: 800px;" id="about">
+            <div style="display: flex; align-items: center;" class="container">
+                <div>
+
+                    <h1>Über Uns</h1>
+                    <p>Willkommen bei der DAA - Ihr Partner in der digitalen Welt</p>
+                    <p>
+                        Als erfahrene Fachinformatiker sind wir Ihr verlässlicher Partner für alle IT-bezogenen
+                        Anliegen.
+                        Unser
+                        Team besteht aus hochqualifizierten Fachleuten, die ihr Wissen und ihre Leidenschaft für die
+                        Informationstechnologie in die Dienstleistungen einbringen, die wir anbieten.</p>
+
+                </div>
+                <div class="portfolio-item">
+                    <img style="height: 100px;" src="/08_Projekt//images/2960_457_1_g.png" alt="imag">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <header>
+            <h2>Unser Team</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="lukas.html">Lukas Trapp </a></li>
+                    <li><a href="elias.html">Elias Ridder</a></li>
+                    <li><a href="andre.html">Andre Fuchs</a></li>
+                    <li><a href="ivanov.html">Ivanov Hristo</a></li>
+                    <li><a href="sebastian.html">Sebastian Weissenborn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section id="portfolio">
+            <div class="container">
+                <h1>Inhalte HTML/CSS:</h1>
+                <!-- Add your portfolio items here with images and descriptions -->
+
+
+
+
+
+                <ol>
+                    <li>HTML
+                        <ul>
+                            <li>Text</li>
+                            <li>Hyperlinks</li>
+                            <li>Bilder</li>
+                            <li>Listen</li>
+                            <li>Tabellen</li>
+                            <li>Formulare</li>
+                        </ul>
+                    </li>
+                    <li>CSS
+                        <ul>
+                            <li>Farbgestaltung</li>
+                            <li>Schriftgestaltung</li>
+                            <li>Selektoren & Pseudoklassen</li>
+                            <li>Layoutmanager</li>
+                        </ul>
+                    </li>
+                </ol>
+
+
+
+
+
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Wenn Sie mit uns in Kontakt treten möchten, können Sie unser Kontaktformular nutzen
+                    <a href="form.html" class="navi">Zum Kontaktformular</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- <footer>
+        <div class="container">
+            <p>&copy; 2023 Group Portfolio</p>
+        </div>
+    </footer> -->
+
+      
+
+
+
+        <script>
+            // JavaScript function to toggle responsive navbar
+            function myFunction() {
+                var x = document.getElementById("myNavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="container_2">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img style="height: 50px; margin-left: 25px;" src="/08_Projekt//images/2960_457_1_g.png"
+                    alt="Your Logo">
+            </div>
+            <div style="margin-right: 20px;" class="footer-info">
+                <p>&copy; 2023 Bender Bieger Rodriguez </p>
+                <p>Contact: iloveme@web.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
